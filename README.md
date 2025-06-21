@@ -131,18 +131,22 @@ Fixed a subtle but critical issue where GOAWAY and headers were silently dropped
 
 ## 🌟 Competitive Programming & Achievements
 
-* ✨ **CodeChef Div 1** – Global Rank 64, Top 6 in India
-* ✨ **LeetCode Guardian** – 2250+ Rating, Top 0.75%, 500+ problems solved
-* ✨ **Codeforces Expert** – 1600+ Rating, 700+ problems solved
-* ✨ **Google Kickstart** – Global Top 2%, Rank 468 in Round A
 * ✨ **ICPC Amritapuri Regionalist (2020)** – Rank 365/3700+
+* ✨ **CodeChef September Lunchtime (2021)** – Global Rank 31/10,000+
+* ✨ **LeetCode Biweekly Contest 75** – India Rank 15, Global Rank 104/16,300+
+* ✨ **CodeChef March Challenge Div 1 (2021)** – Global Rank 64/30,000+, Top 6 in India
+* ✨ **Codeforces Round 786 Div 3** – Global Rank 74/25,000+
+* ✨ **CodeChef Goodies Winner** – Top 6 in India (among 1000+ participants)
+* ✨ **Coding Ninjas Codekaze Round 2** – Global Rank 134/200,000+ (Top 0.06%)
+* ✨ **Google Kickstart Round A (2022)** – Global Rank 468 (Top 2%), Handle: `pandeykushagra`
+* ✨ **Google Kickstart Round H (2021)** – Global Rank 438, Handle: `pandeykushagra`
 
 ---
 
 ## 📢 Let's Connect
 
 * 📧 Email: [kushagra.pandey.iitd@gmail.com](mailto:kushagra.pandey.iitd@gmail.com)
-* 👤 LinkedIn: [linkedin.com/in/kushagra-pandey-iitd](https://linkedin.com/in/kushagra-pandey-iitd)
+* 👤 LinkedIn: [linkedin.com/in/pandeykushagra51](https://www.linkedin.com/in/pandeykushagra51/)
 * 💻 GitHub: [github.com/pandeykushagra51](https://github.com/pandeykushagra51)
 
 ---
