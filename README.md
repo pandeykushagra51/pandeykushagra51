@@ -2,7 +2,7 @@
 
 **Fullstack + Infra Engineer** • **OSS Contributor** (Node.js Core) • **Growth & Monetization Lead**
 
-📍 Based in India | Working Remotely — Always excited to optimize systems, improve UX, and ship high-impact features.
+📍 Based in India | Working Remotely — I own and lead end-to-end features and projects, from design to delivery, driving measurable outcomes. Always excited to optimize systems, improve UX, and ship high-impact features.
 
 ---
 
