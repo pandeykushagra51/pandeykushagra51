@@ -10,7 +10,7 @@
 
 🔧 **Tech Depth**: Contributed core improvements to [Node.js HTTP/2 internals](https://github.com/nodejs/node/pull/57611), including graceful shutdown & stream lifecycle fixes.
 
-🚀 **Business Impact**: Led high-revenue projects at **Speechify**, directly improving monetization, onboarding, subscriptions, and user funnels—achieving 20%+ revenue growth.
+🚀 **Business Impact**: Led high-revenue projects at **Speechify**, directly improving monetization, onboarding, subscriptions, and user funnels—achieving revenue growth.
 
 🧠 **Leadership & Ownership**: Proactively owned infra, observability, A/B testing pipelines, and cross-team migration projects—ensuring zero-downtime launches and measurable outcomes.
 
@@ -32,11 +32,11 @@
 * **Led monetization and growth flows** (landing, signup, upsell, onboarding, subscriptions):
 
   * Built reusable **upsell & analytics libraries**—improving dev velocity, consistency, and reducing bugs.
-  * Ran A/B experiments using **ConfigCat + Amplitude**, optimizing purchase path and boosting revenue by **20%+**.
+  * Ran A/B experiments using **ConfigCat + Amplitude**, optimizing purchase path and boosting revenue.
   * Detected event-logging issues; implemented **Amplitude + GCP alerts** to proactively prevent funnel degradation.
-* Rewrote dubbing UI with **Svelte**, elevating user satisfaction from **45% to 53%** in just one month.
-* Optimized landing-pages using **Vite bundling, tree-shaking, CDN caching, video preloading**—improved SEO and conversions by **22%**.
-* Led **subscription-entitlement migration**, coordinating cross-functional teams, achieving **zero downtime**.
+* Rewrote dubbing UI with **Svelte**, elevating user satisfaction.
+* Optimized landing-pages using **Vite bundling, tree-shaking, CDN caching, video preloading**—improved SEO and conversions.
+* Led **subscription-entitlement migration**, coordinating cross-functional teams, with **zero downtime**.
 
 ---
 
