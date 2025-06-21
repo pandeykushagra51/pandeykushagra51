@@ -81,63 +81,52 @@
 
 ---
 
-🌐 Open Source
-🧩 Node.js Core Contributions — HTTP/2 Internals
-✅ Contribution #1: Graceful Shutdown of HTTP/2 Sessions
-PR: Implement graceful shutdown of HTTP/2 server sessions with proper GOAWAY handling (#57611)
+## 🌐 Open Source
 
-🔧 Key Changes:
+### 🧩 Node.js Core Contributions — HTTP/2 Internals
 
-Introduced kSessions symbol and a SafeSet to track active Http2Session instances.
+---
 
-Added a closeAllSessions() helper to iterate and terminate all sessions cleanly.
+#### ✅ Contribution #1: Graceful Shutdown of HTTP/2 Sessions  
+**PR:** [#57611 – Implement graceful shutdown of HTTP/2 server sessions with proper GOAWAY handling](https://github.com/nodejs/node/pull/57611)
 
-Updated Http2Server.close() and Http2SecureServer.close() to:
+**Key Changes:**
+- Introduced `kSessions` symbol and a `SafeSet` to track active `Http2Session` instances.
+- Added a `closeAllSessions()` helper to terminate sessions cleanly.
+- Updated `Http2Server.close()` and `Http2SecureServer.close()` to:
+  - Send GOAWAY frames.
+  - Wait for in-flight streams to finish before closing.
+- Refactored failing tests to align with new lifecycle.
+- Ensured compliance with [RFC 7540 §9.1](https://datatracker.ietf.org/doc/html/rfc7540#section-9.1) and `.close()` behavior parity with HTTP/1.
 
-Send GOAWAY frames before closing.
+**Impact:**
+- Prevents hanging processes due to lingering HTTP/2 sessions during shutdown.
+- Properly rejects new streams after shutdown is initiated.
+- Improves server stability and resource cleanup in production environments.
+- Introduces a breaking change that aligns behavior with spec and expectations.
 
-Wait for in-flight streams to complete.
+**Why It Matters:**  
+This fix resolves a long-standing issue where HTTP/2 servers in Node.js couldn't shut down cleanly—critical for production workloads like gRPC and streaming APIs. Improves system reliability and protocol compliance.
 
-Refactored and fixed failing tests to align with the new shutdown lifecycle.
+---
 
-Ensured compliance with RFC 7540 §9.1 and HTTP/1 .close() semantics.
+#### ✅ Contribution #2: Fix Premature Session Termination on Empty Responses  
+**PR:** [#57808 – Fix premature termination of HTTP/2 sessions when sending empty payload responses](https://github.com/nodejs/node/pull/57808)
 
-📈 Impact:
+**Key Changes:**
+- Deferred socket destruction until GOAWAY + headers were fully flushed by `nghttp2`.
+- Used `nghttp2_session_want_write/read` to manage shutdown safely.
+- Added callback-based finalization strategy between JS and C++ layers.
+- Identified and fixed race conditions in flaky test `test-http2-client-rststream-before-connect.js`.
 
-Prevents process hangs caused by lingering HTTP/2 sessions.
+**Impact:**
+- Guarantees reliable GOAWAY and header delivery for edge cases (e.g., empty responses).
+- Improves lifecycle stability and test reliability across platforms.
+- Enhances HTTP/2 compliance and eliminates silent failures.
 
-Enforces proper GOAWAY signaling and rejection of new streams post-shutdown.
+**Why It Matters:**  
+Fixed a subtle but critical issue where GOAWAY and headers were silently dropped—especially for empty responses. This strengthens Node.js’s networking layer for high-reliability environments and makes tests more deterministic.
 
-Improves server resource cleanup and stability in production.
-
-Introduces a breaking change, but aligns implementation with expected behavior.
-
-💡 Why It Matters:
-This fix addresses a long-standing issue where Node.js HTTP/2 servers couldn't shut down gracefully—vital for production use cases like gRPC, streaming APIs, and long-lived connections. It improves reliability and correctness across the board.
-
-✅ Contribution #2: Fix Premature Session Termination on Empty Responses
-PR: Fix premature termination of HTTP/2 sessions when sending empty payload responses (#57808)
-
-🔧 Key Changes:
-
-Deferred socket destruction until all pending headers and GOAWAY frames were flushed from nghttp2.
-
-Coordinated lifecycle finalization between JS and C++ layers using callback-based logic.
-
-Used nghttp2_session_want_write/read to safely time session teardown.
-
-Identified and fixed a flaky test (test-http2-client-rststream-before-connect.js) by exposing race conditions.
-
-📈 Impact:
-
-Ensures reliable delivery of GOAWAY and headers, even for empty responses.
-
-Fixes subtle bugs in session lifecycle and improves spec compliance.
-
-Enhances cross-platform test reliability and stability.
-
-💡 Why It Matters:
-This fix plugs a hidden edge case where responses with no payload silently dropped essential frames—compromising reliability. It also improves internal coordination between JS and C++, making Node.js more production-safe and standards-aligned.
 ---
 
 ## 🌟 Competitive Programming & Achievements
