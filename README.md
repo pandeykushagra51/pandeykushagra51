@@ -2,114 +2,162 @@
 
 **Fullstack + Infra Engineer** • **Open Source Contributor** (Node.js Core) • **Growth & Monetization Lead**
 
-📍 Based in India | Working Remotely — I own and lead end-to-end features and projects, from design to delivery, driving measurable outcomes. Always excited to optimize systems, improve UX, and ship high-impact features.
+📍 Based in India | Working Remotely — I lead and deliver high-impact end-to-end features and systems, combining product intuition with deep technical execution. I'm passionate about shipping reliable software, improving performance, and scaling systems.
 
 ---
 
 ## 🧩 TL;DR — What Sets Me Apart
 
-🔧 **Tech Depth**: Contributed core improvements to [Node.js HTTP/2 internals](https://github.com/nodejs/node/pull/57611), including graceful shutdown & stream lifecycle fixes.
+* 🔧 **Technical Depth**: Contributed core improvements to [Node.js HTTP/2 internals](https://github.com/nodejs/node/pull/57611), fixing session lifecycle issues and enabling graceful shutdowns per RFC 7540.
 
-🚀 **Business Impact**: Led high-revenue projects at **Speechify**, directly improving monetization, onboarding, subscriptions, and user funnels—achieving revenue growth.
+* 🚀 **Business Impact**: Drove growth and monetization at **Speechify** by leading experiments across onboarding, landing pages, upsells, and subscription flows—directly improving revenue.
 
-🧠 **Leadership & Ownership**: Proactively owned infra, observability, A/B testing pipelines, and cross-team migration projects—ensuring zero-downtime launches and measurable outcomes.
+* 🧐 **Ownership & Leadership**: Led initiatives across observability, infrastructure, A/B testing frameworks, and production migrations with a focus on zero-downtime rollouts.
 
-⚡ **Fast Learner**: Entrusted with debugging Cloud Run memory leaks, scaling CI pipelines, and rewriting UI flows across Svelte, React, and Node.js.
+* ⚡️ **Fast Learner**: Debugged complex issues like Cloud Run memory leaks using Linux tools, re-architected CI pipelines, and shipped fullstack features across React, Svelte, Node.js, and Kubernetes.
 
 ---
 
 ## 🚀 What I Do
 
-* ❤️ Building and scaling platforms—frontend to backend to infrastructure.
-* 🧠 Diagnosing hard problems: memory leaks in production, audit performance bottlenecks, and unreliable logging pipelines.
-* 🛠 Leading monetization and growth experiments with measurable impact.
+* ❤️ Architect and scale systems across frontend, backend, and DevOps.
+* 🧠 Solve hard engineering problems—from debugging memory leaks to optimizing cold starts.
+* 📈 Run and scale product-led growth experiments from idea to production.
 
 ---
 
-## 🏆 Recent Highlights (Speechify @ Apr 2024 – Present)
+## 🏆 Highlights (Speechify, Apr 2024 – Present)
 
-* **Fixed Cloud Run memory leak** causing recurring OOM crashes—used Linux system tools to root cause and resolve.
-* **Led monetization and growth flows** (landing, signup, upsell, onboarding, subscriptions):
+* Resolved a **Cloud Run memory leak** causing async job failures due to OOMs. Used **Linux-level debugging** to trace open handles and reduce container crashes.
+* Led critical **monetization and growth features**:
 
-  * Built reusable **upsell & analytics libraries**—improving dev velocity, consistency, and reducing bugs.
-  * Ran A/B experiments using **ConfigCat + Amplitude**, optimizing purchase path and boosting revenue.
-  * Detected event-logging issues; implemented **Amplitude + GCP alerts** to proactively prevent funnel degradation.
-* Rewrote dubbing UI with **Svelte**, elevating user satisfaction.
-* Optimized landing-pages using **Vite bundling, tree-shaking, CDN caching, video preloading**—improved SEO and conversions.
-* Led **subscription-entitlement migration**, coordinating cross-functional teams, with **zero downtime**.
+  * Built reusable **upsell and analytics libraries**, boosting experiment velocity and UX consistency.
+  * Ran A/B tests via **ConfigCat + Amplitude**, increasing purchases through optimized user funnels.
+  * Improved event fidelity with **Amplitude + GCP Monitoring + Slack alerts**, proactively detecting regressions.
+* Rewrote dubbing interface with **Svelte**, improving TTI and user satisfaction.
+* Optimized landing performance with **Vite, tree-shaking, CDN caching, video preloading**, improving SEO scores and increasing conversions by 22%.
+* Coordinated and launched a **zero-downtime migration** of subscription entitlements across systems.
 
 ---
 
-## 🛠 Skill Set
+## 🛠️ Skill Set
 
-| Domain                    | Tools & Technologies                                                           |
+| Category                  | Technologies                                                                   |
 | ------------------------- | ------------------------------------------------------------------------------ |
-| **Languages**             | TypeScript, JavaScript, Go, C++, SQL, Bash                                     |
-| **Frontend**              | React.js, Svelte, Next.js, Vite, AJAX                                          |
-| **Backend**               | Node.js, NestJS, Express.js, Golang                                            |
-| **Cloud & Infra**         | AWS (Lambda, SQS, EventBridge, S3), GCP (Cloud Run, GKE), Kubernetes, Docker   |
-| **CI/CD & Observability** | GitHub Actions, Terraform, Lighthouse CI, Prometheus, Grafana, Loki, Amplitude |
-| **Databases**             | PostgreSQL, MySQL, Redis, MongoDB, ClickHouse                                  |
+| **Languages**             | TypeScript, JavaScript, Golang, C++, SQL, Bash                                 |
+| **Frontend**              | React.js, Svelte, Next.js, Vite, Tailwind, HTML/CSS                            |
+| **Backend**               | Node.js, NestJS, Express, REST, GraphQL                                        |
+| **Infra & Cloud**         | AWS (SQS, Lambda, EventBridge, S3), GCP (Cloud Run, GKE), Kubernetes, Docker   |
+| **CI/CD & Observability** | GitHub Actions, Prometheus, Grafana, Loki, Lighthouse CI, Terraform, Amplitude |
+| **Databases**             | PostgreSQL, MySQL, MongoDB, Redis, ClickHouse                                  |
 
 ---
 
-## 🧩 Past Roles & Internships
+## 📅 Past Roles & Internships
 
-### Gripinvest (Backend Engineer, Jul 2023 – Apr 2024)
+### Grip Invest (SDE, Jul 2023 – Apr 2024)
 
-* Built an **async processing system** with AWS SQS, Lambda & EventBridge.
-* Implemented **Gzip compression** on Nginx — reducing latency for large payloads by \~20%.
-* Secured subdomain routing for **token-based, login-free payment flows**.
+* Designed and built **asynchronous workflows** using AWS Lambda, SQS, and EventBridge for backend financial calculations.
+* Enabled **login-free, secure payments** via a tokenized subdomain-routing system.
+* Reduced API latency for large responses by 20% with **Gzip compression** in Nginx.
+* Reduced **AWS data transfer costs** via log optimization and aggregation strategies.
 
-### Truefoundry (Fullstack Intern, Summer 2023)
+### Truefoundry (SDE Intern, Summer 2023)
 
-* Developed **Golang + NestJS services** for ArgoCD and Helm deployments.
-* Automated CI/CD setup using GCP service accounts for customers.
+* Developed Golang/NestJS microservices to manage **ArgoCD apps** and **Helm chart lifecycles**.
+* Built a feature to allow users to register service accounts in their GitHub repos, enabling **automated CI/CD deployments** to Truefoundry-hosted Kubernetes clusters.
+* Improved test reliability and reduced execution time using **Jest and parallelization**.
 
-### Bik (Backend Intern, 2022)
+### Bik (SDE Intern, 2022)
 
-* Built **Node.js image compression microservice** on Kubernetes — improved load time by **15%**.
-* Supported data team in dashboarding and open-source data migrations.
+* Built and deployed a **Node.js microservice** on Kubernetes to compress/convert images to WebP, reducing size by 40% and improving load time.
+* Collaborated with data team on **data migration** and dashboarding using SQL and Airbyte.
 
-### Gripinvest (DevOps Intern, 2022)
+### Grip Invest (DevOps Intern, 2022)
 
-* Created **local Kubernetes infra** to mimic production, reducing infra costs and speeding dev cycles.
-* Integrated **Lighthouse CI** for PR checks; improved performance audits runtime by **40%** with a Bash parallelism script.
-* Built observability stack with **Prometheus, Grafana, and Loki**.
-
----
-
-## 🌍 Open Source
-
-**Node.js Core Contributor** (112k+ GitHub stars)
-
-### 1. Graceful HTTP/2 Shutdown (PR #57611)
-
-* Added `kSessions` tracking and `closeAllSessions()` for systematic session cleanup.
-* Ensured GOAWAY frames follow RFC7540, and shutdowns complete correctly without leaking sessions.
-
-### 2. Fix Premature HTTP/2 Session Termination (PR #57808)
-
-* Fixed race conditions in the JS–C++ bridge—prevented socket closure before nghttp2 flush.
-* Improved test reliability and cross-platform network stability.
+* Created a **local Kubernetes testbed** mirroring production infra, accelerating feedback cycles and cutting infra costs.
+* Implemented **Lighthouse CI** for PR performance checks and used shell scripting to parallelize workflows.
+* Set up observability stack with **Prometheus, Grafana, and Loki**.
 
 ---
 
-## 📈 Competitive Programming & Achievements
+## 🌐 Open Source
 
-* **CodeChef Div 1** – Global Rank 64 (Top 6 in India)
-* **LeetCode Guardian** – 2250+ rating (Top 0.75%)
-* **Codeforces Expert** – 1600+ rating, 700+ solved
-* **Google Kickstart** – Top 2% globally
-* **ICPC Regionalist** – 365/3700+ (Top 10%)
+🧩 Node.js Core Contributions — HTTP/2 Internals
+✅ Contribution #1: Graceful Shutdown of HTTP/2 Sessions
+PR: Implement graceful shutdown of HTTP/2 server sessions with proper GOAWAY handling (#57611)
+
+Key Changes:
+
+Introduced kSessions symbol and a SafeSet to track active Http2Session instances.
+
+Added a closeAllSessions() helper to iterate over active sessions and cleanly terminate them.
+
+Updated Http2Server.close() and Http2SecureServer.close() to:
+
+Send GOAWAY frames.
+
+Wait for in-flight streams to complete before tearing down the connection.
+
+Refactored and fixed failing tests to match new lifecycle behavior.
+
+Ensured spec compliance with RFC 7540 §9.1 and documented alignment with HTTP/1 server .close() semantics.
+
+Impact:
+
+Prevents indefinite process hangs due to lingering HTTP/2 sessions during shutdown.
+
+Rejects new streams post-shutdown initiation, following correct protocol behavior.
+
+Improves server resource management and production reliability.
+
+Introduces a breaking change that aligns with expected, documented behavior.
+
+Why It Matters:
+This patch resolves a long-standing issue where HTTP/2 servers in Node.js couldn't shut down cleanly, which is critical in production environments (e.g., gRPC, streaming APIs). It enhances stability and makes graceful termination predictable and spec-compliant.
+
+✅ Contribution #2: Fix Premature Session Termination on Empty Responses
+PR: Fix premature termination of HTTP/2 sessions when sending empty payload responses (#57808)
+
+Key Changes:
+
+Deferred socket destruction until all pending headers and GOAWAY frames were fully flushed by nghttp2.
+
+Introduced lifecycle finalization via callback-based coordination between JS and C++ layers.
+
+Used nghttp2_session_want_write/read to safely manage shutdown timing.
+
+Surfaced and fixed a race condition by rewriting flaky test test-http2-client-rststream-before-connect.js.
+
+Impact:
+
+Guarantees reliable delivery of GOAWAY + headers even in edge cases (like empty responses).
+
+Eliminates subtle session lifecycle bugs that could cause premature connection termination.
+
+Improves test reliability and protocol correctness across platforms.
+
+Why It Matters:
+This change fixes a subtle but impactful bug that could silently drop HTTP/2 frames during shutdown — leading to lost headers and unpredictable behavior. It also strengthens the reliability of Node’s core networking stack and ensures better compliance with HTTP/2 standards.
 
 ---
 
-## 📫 Let’s Connect
+## 🌟 Competitive Programming & Achievements
 
-* 📧 [kushagra.pandey.iitd@gmail.com](mailto:kushagra.pandey.iitd@gmail.com)
-* 🔗 [LinkedIn](https://linkedin.com/in/kushagra-pandey-iitd) | [GitHub](https://github.com/pandeykushagra51)
+* ✨ **CodeChef Div 1** – Global Rank 64, Top 6 in India
+* ✨ **LeetCode Guardian** – 2250+ Rating, Top 0.75%, 500+ problems solved
+* ✨ **Codeforces Expert** – 1600+ Rating, 700+ problems solved
+* ✨ **Google Kickstart** – Global Top 2%, Rank 468 in Round A
+* ✨ **ICPC Amritapuri Regionalist (2020)** – Rank 365/3700+
 
 ---
 
-> ⚡️ "Ship fast, break nothing, optimize everything."
+## 📢 Let's Connect
+
+* 📧 Email: [kushagra.pandey.iitd@gmail.com](mailto:kushagra.pandey.iitd@gmail.com)
+* 👤 LinkedIn: [linkedin.com/in/kushagra-pandey-iitd](https://linkedin.com/in/kushagra-pandey-iitd)
+* 💻 GitHub: [github.com/pandeykushagra51](https://github.com/pandeykushagra51)
+
+---
+
+> ⚡️ *"Ship fast, break nothing, optimize everything."*
