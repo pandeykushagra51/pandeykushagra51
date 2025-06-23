@@ -35,7 +35,7 @@
   * Ran A/B tests via **ConfigCat + Amplitude**, increasing purchases through optimized user funnels.
   * Improved event fidelity with **Amplitude + GCP Monitoring + Slack alerts**, proactively detecting regressions.
 * Rewrote dubbing interface with **Svelte**, improving TTI and user satisfaction.
-* Optimized landing performance with **Vite, tree-shaking, CDN caching, video preloading**, improving SEO scores and increasing conversions by 22%.
+* Optimized landing performance with **Vite, tree-shaking, CDN caching, video preloading**, improving SEO scores and increasing conversions significantly.
 * Coordinated and launched a **zero-downtime migration** of subscription entitlements across systems.
 
 ---
